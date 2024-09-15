@@ -1,1 +1,62 @@
-Testerony <h1> hi </h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Locator</title>
+    <style>
+        /* Add some basic styling to make it look decent */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .equipment {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equipment Locator</h1>
+    <p class="equipment" id="equipment"></p>
+    <button class="button" id="next-equipment">Nächster Gegenstand</button>
+
+    <script>
+        // Array of equipment items
+        const equipmentList = [
+            "Defibrillator",
+            "Sauerstofftank",
+            "Erste-Hilfe-Kit",
+            "Rettungsschere",
+            "Beatmungsbeutel",
+            // Add more equipment items here
+        ];
+
+        // Function to generate a random equipment item
+        function getRandomEquipment() {
+            const randomIndex = Math.floor(Math.random() * equipmentList.length);
+            return equipmentList[randomIndex];
+        }
+
+        // Display the random equipment item
+        document.getElementById("equipment").innerHTML = getRandomEquipment();
+
+        // Add event listener to the button
+        document.getElementById("next-equipment").addEventListener("click", function() {
+            document.getElementById("equipment").innerHTML = getRandomEquipment();
+        });
+    </script>
+</body>
+</html>
