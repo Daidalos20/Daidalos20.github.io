@@ -13,9 +13,12 @@
       font-family: 'Inter', sans-serif; /* modern, clean font */
       font-size: 20px; /* increased base font size for mobile devices */
     }
- 
+  
+  button {
+  }
+  
     .container {
-      margin: 40px auto;
+      margin: 20px auto;
       padding: 20px;
       background-color: #333;
       border-radius: 10px;
@@ -23,18 +26,25 @@
     }
 
     p {
-      color: #ccc;
+      color: #eee;
     }
-
-    .item-container {
-      min-height: 110px;
-      max-height: auto;
-    }
-  
+   
     #item {
       font-size: 25px; 
     }
 
+    .item-container {
+      margin-top: 41px;
+      min-height: 110px;
+      max-height: auto;
+      transition: background-color 0.2s;
+    }
+    
+  .item-container.timer-active {
+    background-color: #007147;
+  }
+    
+ 
     /* Navigation icon styles */
     .nav-icon {
       position: fixed;
@@ -46,7 +56,7 @@
       transition: transform 0.5s ease-in-out; 
     }
     .nav-icon.active {
-      transform: rotate(45deg);
+      transform: rotate(30deg);
     }
   
     .nav-icon span {
@@ -126,28 +136,119 @@
       border: 4px solid #555;
       font-weight: bold;
       }
+  
+.result-modal {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%; 
+  max-width: 800px; 
+  z-index: 1000;
+  top: 20px;
+  bottom: 20px;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: auto;
+  transition: opacity 1s; /* added */
+}
+
+.result-modal.show {
+  visibility: visible; 
+  opacity: 1; 
+}
+
+.result-modal-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-modal-header h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.close-btn {
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #666;
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn:hover {
+  background-color: #888;
+}
+
+.result-modal-content {
+  padding: 20px;
+  background-color: #222;
+  border-radius: 0 0 10px 10px;
+  overflow: auto;
+}
+
+#result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#result-table th, #result-table td {
+  border: 1px solid #ddd;
+  padding: 7px;
+  text-align: left;
+  font-size: 15px;
+}
+  
+  
+  /* Make the entire page unclickabel, when overlay-open is active*/
+body.overlay-open * {
+  pointer-events: none;
+}
+
+body.overlay-open .result-modal * {
+  pointer-events: auto;
+}
 
     .next-stop-button {
       height: 30vh;
-      /* 30% of the viewport height */
       width: 100%;
-      /* full width of the viewport */
-      border: none;
-      border-radius: 5px;
-      background-color: #444;
+      border: 2px solid #333;
+      border-radius: 16px;
+      background-color: #1559BC;
       color: #fff;
-      font-size: 20px; /* increased font size for next stop button */
-      font-family: 'Inter', sans-serif; /* modern, clean font */
+      font-size: 20px; 
+      font-family: 'Inter', sans-serif;
+      box-shadow: inset -6px -6px 6px rgba(0, 0, 0, 0.3);
       cursor: pointer;
     }
+  .next-stop-button:hover {
+    background-color: #124CA2;
+  }
+    .next-stop-button:active{
+    background-color: #17478E ;
+      box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.3);
+  }
 
     .info-container {
-      bottom: 20px;
-      left: 20px;
       display: flex;
     }
 
     .info-button {
+      margin-right: 20px;
       font-size: 24px;
       height: 50px;
       width: 50px;
@@ -157,23 +258,15 @@
       background-color: #444;
       color: #fff;
     }
-
-    .location-hint {
-      margin-left: 10px;
-      width: 100%;
-      background-color: #333;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
     .info-button:hover {
       background-color: #555;
     }
-
-    /* Next stop button styles */
-    .next-stop-button:hover {
-      background-color: #555;
+  
+    .location-hint {
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      flex-grow:1;
     }
   
     .progress-bar-container {
@@ -214,6 +307,20 @@
   </div>
   <div class="nav-overlay">
   </div>
+
+
+<div class="result-modal" id="result-modal">
+  <div class="result-modal-header">
+    <h2>Ergebniss</h2>
+    <button class="close-btn">&times;</button>
+  </div>
+  <div class="result-modal-content">
+    <p id="general-results"></p>
+    <table id="result-table">
+    </table>
+  </div>
+</div>
+  
   <div class="container item-container">
     <p id="item"> <!-- item content will go here --> </p>
     
@@ -225,7 +332,7 @@
     <span id="progress-text"></span>
     
   </div>
-  <button class="next-stop-button" id="next_stop_button" onclick="start_stop_timer()">
+  <button class="next-stop-button" id="next_stop_button" onclick="mainButtonClicked()">
     Runde starten, Gegenstand anzeigen (du solltest das nicht sehen)
   </button>
   <div class="container" id="timer">
