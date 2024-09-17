@@ -34,6 +34,50 @@ const item_containers = {
       },
     ],
   },
+  NEF: {
+    meta: {
+      display_name: 'NEF Inhalt',
+    },
+    items: [
+      {
+        name: 'Medizinische Handschuhe',
+        location: 'Wache 1, Schrank 2',
+      },
+      {
+        name: 'Atemschutzmaske',
+        location: 'Fahrzeug 1, Fach E',
+      },
+    ],
+  },
+  NEF2: {
+    meta: {
+      display_name: 'NEF2 Inhalt',
+    },
+    items: [
+      {
+        name: 'Medizinische Handschuhe',
+        location: 'Wache 1, Schrank 2',
+      },
+      {
+        name: 'Atemschutzmaske',
+        location: 'Fahrzeug 1, Fach E',
+      },
+    ],
+  },
+  NEF5: {
+    meta: {
+      display_name: 'NEF 5 Inhalt',
+    },
+    items: [
+      {
+        name: 'Medizinische Handschuhe',
+      },
+      {
+        name: 'Atemschutzmaske',
+        location: 'Fahrzeug 1, Fach E',
+      },
+    ],
+  },
 
   'SSD-Rucksack': {
     meta: {
@@ -882,8 +926,6 @@ function closeResultModal() {
 
 document.querySelector('.close-btn').addEventListener('click', closeResultModal);
 
-
-
 //Main button
 function mainButtonClicked() {
   if (!timer_running) {
@@ -900,6 +942,9 @@ function showNewItem() {
   const itemElement = document.getElementById('item');
   itemElement.innerHTML = current_item.name
   const locationHintElement = document.getElementById('location-hint');
+  if(!current_item.location){
+    current_item.location = "? nicht Eingetragen ?"
+  }
   locationHintElement.innerHTML = current_item.location;
   mainButtonElement.innerHTML = 'Gefunden!';
   startTimer();
