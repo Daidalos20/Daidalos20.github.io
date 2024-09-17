@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medi-Mapper</title>
+<style>
+    /* Dark mode styles */
+    body {
+      background-color: #212121;
+      color: #fff;
+      font-family: 'Inter', sans-serif; /* modern, clean font */
+      font-size: 20px; /* increased base font size for mobile devices */
+    }
+ 
+    .container {
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #333;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      color: #ccc;
+    }
+
+    .item-container {
+      min-height: 110px;
+      max-height: auto;
+    }
+  
+    #item {
+      font-size: 25px; 
+    }
+
+    /* Navigation icon styles */
+    .nav-icon {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 30px; /* increased font size for navigation icon */
+      cursor: pointer;
+      z-index: 2;
+      transition: transform 0.5s ease-in-out; 
+    }
+    .nav-icon.active {
+      transform: rotate(45deg);
+    }
+  
+    .nav-icon span {
+      display: block;
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .nav-icon.active span {
+      background-color: #ccc;
+    }
+
+    /* Navigation overlay styles */
+    .nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background-color: #333;
+      transition: top 0.5s ease-in-out;
+      z-index: 1;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .nav-overlay.show {
+      top: 40px;
+      visibility: visible;
+      opacity: 1;
+      animation: slideIn 0.5s forwards;
+      pointer-events: auto;
+    }
+  
+    @keyframes slideIn {
+      0% {
+        top: -200px;
+        opacity: 0;
+      }
+      100% {
+        top: 40px;
+        opacity: 1;
+      }
+    }
+
+  @keyframes slideOut {
+    0% {
+      top: 40px;
+      opacity: 1;
+    }
+    100% {
+      top: -200px;
+      opacity: 0;
+    }
+  }
+  
+    .nav-overlay button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: #fff;
+      font-size: 20px; /* increased font size for navigation buttons */
+      cursor: pointer;
+    } 
+
+    .nav-overlay button:hover {
+      background-color: #555;
+    }
+    .nav-overlay button.highlighted {
+      background-color: #4567b7;
+      border: 4px solid #555;
+      font-weight: bold;
+      }
+
+    .next-stop-button {
+      height: 30vh;
+      /* 30% of the viewport height */
+      width: 100%;
+      /* full width of the viewport */
+      border: none;
+      border-radius: 5px;
+      background-color: #444;
+      color: #fff;
+      font-size: 20px; /* increased font size for next stop button */
+      font-family: 'Inter', sans-serif; /* modern, clean font */
+      cursor: pointer;
+    }
+
+    .info-container {
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+    }
+
+    .info-button {
+      font-size: 24px;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      background-color: #444;
+      color: #fff;
+    }
+
+    .location-hint {
+      margin-left: 10px;
+      width: 100%;
+      background-color: #333;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-button:hover {
+      background-color: #555;
+    }
+
+    /* Next stop button styles */
+    .next-stop-button:hover {
+      background-color: #555;
+    }
+  
+    .progress-bar-container {
+      width: 100%;
+      height: 20px;
+      background-color: #555;
+      position: relative;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      transition: width 0.5s;
+    }
+
+    #progress-text {
+      font-size: 12px;
+      color: #fff;
+      position: absolute;
+      top:0px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-icon" onclick="toggleNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav-overlay">
+  </div>
+  <div class="container item-container">
+    <p id="item"> <!-- item content will go here --> </p>
+    
+  </div>
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progress-bar">
+      
+    </div>
+    <span id="progress-text"></span>
+    
+  </div>
+  <button class="next-stop-button" id="next_stop_button" onclick="start_stop_timer()">
+    Runde starten, Gegenstand anzeigen (du solltest das nicht sehen)
+  </button>
+  <div class="container" id="timer">
+    <p id="timer-text">Gesammt Zeit: 0.00s</p>
+  </div>
+  <div class="info-container">
+    <button class="info-button" onclick="showLocationHint()">
+      i
+    </button>
+    <div class="location-hint" id="location-hint" style="display:none">
+      <!-- Location-hint content will go here -->
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>
