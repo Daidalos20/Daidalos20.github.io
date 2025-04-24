@@ -1,3 +1,4 @@
+const item_containers;
 fetch('./item_containers.json')
   .then(response => {
     if (!response.ok) {
@@ -7,7 +8,7 @@ fetch('./item_containers.json')
   })
   .then(data => {
     console.log(data); 
-    const item_containers = data;
+    item_containers = data;
   })
   .catch(error => console.error('Error fetching JSON:', error));
 
