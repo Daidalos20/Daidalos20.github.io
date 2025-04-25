@@ -1474,5 +1474,3 @@ function hideLocationHint() {
 //initial load
 startNewRound('RTW_2018');
 loadNavOverlay();
-
-// testing: 
