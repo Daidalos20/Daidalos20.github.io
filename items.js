@@ -1125,10 +1125,6 @@ let item_containers = {
                 "location": "24 Schrank neben Sauerstofffach > 24.4 > Tasche Rauchgassensoren C3"
             },
             {
-                "name": "Stryker-Fahrtrage",
-                "location": "25 Tragetisch"
-            },
-            {
                 "name": "Umbettungstuch (wei\u00df) (gefaltet unter dem Lacken)",
                 "location": "25 Tragetisch"
             },
