@@ -268,7 +268,7 @@ while (item_containers === undefined){
   console.log("waiting for item_containers to load")
 }
 
-startNewRound('RTW_2018');
+startNewRound('Rucksack_Kreislauf_RTW_NEF');
 loadNavOverlay();
 
 // testing: 
