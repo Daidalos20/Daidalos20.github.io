@@ -1125,6 +1125,10 @@ let item_containers = {
                 "location": "24 Schrank neben Sauerstofffach > 24.4 > Tasche Rauchgassensoren C3"
             },
             {
+                "name": "Stryker-Fahrtrage",
+                "location": "25 Tragetisch"
+            },
+            {
                 "name": "Umbettungstuch (wei\u00df) (gefaltet unter dem Lacken)",
                 "location": "25 Tragetisch"
             },
@@ -1199,6 +1203,790 @@ let item_containers = {
             {
                 "name": "Ferno-Schaufeltrage",
                 "location": "27 Au\u00dfenfach > 27.3"
+            }
+        ]
+    },
+    "Rucksack_Kreislauf_RTW_NEF": {
+        "meta": {
+            "display_name": "Rucksack Kreislauf RTW/NEF"
+        },
+        "items": [
+            {
+                "name": "Einweg-Gasdetektor GasAlertClip Extreme",
+                "location": "Au\u00dfen am Rucksack"
+            },
+            {
+                "name": "Kindersicher \u201eT.O. Zugck\u201c (Taschenkarte, Kinderlineal, Schmerzskala)",
+                "location": "Deckelfach"
+            },
+            {
+                "name": "Robin Rettungsschere",
+                "location": "Deckelfach"
+            },
+            {
+                "name": "Nadoc - Einsatzprotokolle",
+                "location": "Deckelfach > Prospekth\u00fclle"
+            },
+            {
+                "name": "HNR Benachrichtigung",
+                "location": "Deckelfach > Prospekth\u00fclle"
+            },
+            {
+                "name": "Todesbescheinigung",
+                "location": "Deckelfach > Prospekth\u00fclle"
+            },
+            {
+                "name": "Transportschein",
+                "location": "Deckelfach > Prospekth\u00fclle"
+            },
+            {
+                "name": "Rettungsdecke (gold/silber)",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Dreiecktuch",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Mullbinden   8 cm",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "sterile Kompressen  10 cm x 10 cm",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "sterile Kompressen  10 cm x 20 cm",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "sterile Kompressen  20 cm x 40 cm",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Rolle Leucoplast  2,5 cm",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Leukomed (steriles Pflaster)",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Kopfbandage",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Verbandschere",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Tourniquet Abbindesystem",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Skalpell",
+                "location": "Tasche Trauma/ Verbandsmaterial"
+            },
+            {
+                "name": "Kodan Pumpspray",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Venenstauband",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Rolle Leucoplast 2,5 cm",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "sterile Kompressen  7,5x7,5cm",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Tegaderm Braun\u00fclenpflaster",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Venenverweilkan\u00fcle  gr\u00fcn  18G  96 ml/min",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Venenverweilkan\u00fcle  rosa  20G  61 ml/min",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Venenverweilkan\u00fcle  gelb  24G  22 ml/min",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Venenverweilkan\u00fcle  wei\u00df  17G  128 ml/min",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Venenverweilkan\u00fcle  orange  14G  343 ml/min",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Multiadapter zur Blutentnahme",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Monovette - EDTA (rot)",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Monovette - Citrat (gr\u00fcn)",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Monovette - Serum-Gel (wei\u00df oder beige)",
+                "location": "Tasche Ven\u00f6ser Zugang"
+            },
+            {
+                "name": "Blutdruckmessger\u00e4t Erwachsene",
+                "location": "Tasche Diagnostik"
+            },
+            {
+                "name": "Stethoskop Flachmembran Erwachsene",
+                "location": "Tasche Diagnostik"
+            },
+            {
+                "name": "Tasche BZ Messger\u00e4t (mit gen\u00fcgend Unisticks und Teststreifen)",
+                "location": "Tasche Diagnostik"
+            },
+            {
+                "name": "Pupillenlampe",
+                "location": "Tasche Diagnostik"
+            },
+            {
+                "name": "Epinephrin   1 mg/ml  25ml   \n mit Verfall \u201e6 Monate\u201c beschriften",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Glukose G20 20%  100 ml",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Entnahme Mini-Spike  Blau",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Glyceroltrinitrat 0,4 mg / Hub",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Berotec-Spray",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Einmalspritzen 10 ml",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Combi-Stopper",
+                "location": "Tasche Supra / Nitro / Glukose"
+            },
+            {
+                "name": "Einmalspritzen 2 ml",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Einmalspritzen 5 ml",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Einmalspritzen 10 ml",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Einmalspritzen 20 ml",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Feindosierspritzen",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Perfusorspritze OPS 50ml",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Dreiwegehahn",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Aufziehkan\u00fclen",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Einmalkan\u00fclen gelb  (intramuskul\u00e4ren Injektion)",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Combi-Stopper",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Entnahme Mini-Spike  Blau",
+                "location": "Tasche Spritzen"
+            },
+            {
+                "name": "Paare Einmalhandschuhe in den Gr\u00f6\u00dfen \nS\n\nM\n\nL",
+                "location": "Seitenf\u00e4cher im Rucksack"
+            },
+            {
+                "name": "Patientenmasken",
+                "location": "Seitenf\u00e4cher im Rucksack"
+            },
+            {
+                "name": "Abwurfbeh\u00e4lter Rucksack",
+                "location": "Seitenf\u00e4cher im Rucksack"
+            },
+            {
+                "name": "T\u00fcten Wertsachen klein",
+                "location": "Seitenf\u00e4cher im Rucksack"
+            },
+            {
+                "name": "Rolle graue M\u00fcllbeutel",
+                "location": "Seitenf\u00e4cher im Rucksack"
+            },
+            {
+                "name": "Jonosteril    500 ml",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "NaCl    100 ml",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Paracetamol  10 mg/ml  100 ml (Fertiginfusionsl\u00f6sung)",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Intrafix Infusionssysteme",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Spuckbeutel",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Mappe mit Medikamentenaufklebern",
+                "location": "Ampullarium"
+            },
+            {
+                "name": "Kurz\u00fcbersicht \u2013 Verd\u00fcnnung der Medikamente",
+                "location": "Ampullarium"
+            },
+            {
+                "name": "Kurz\u00fcbersicht \u2013 Wirkstoff und Handelsname",
+                "location": "Ampullarium"
+            },
+            {
+                "name": "Einmalkan\u00fclen rot  (Aufziehen)",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Einmalkan\u00fclen gelb  (intramuskul\u00e4ren Injektion)",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Einmalspritzen 2 ml",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Einmalspritzen 5 ml",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Einmalspritzen 10 ml",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Einmalspritzen 20 ml",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Feindosierspritze",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "NaCl  0,9%  10 ml",
+                "location": "Ampullarium > Gummib\u00e4nder"
+            },
+            {
+                "name": "Amiodaron  150 mg  3 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Atropin   0,5 mg   1 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Butylscopolamin 20 mg  1 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Cafedrin/Theoadrenalin 200 mg + 10 mg  2 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Clonidin   0,15 mg  1 ml  (+ 9 ml NaCl)",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Dimenhydrinat 62 mg  10 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Dimetinden  4 mg  4 ml\n(oder Alternative wie z.B. Clemastin 2mg/2ml)",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Epinephrin  1 mg  1 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Esketamin  50 mg  2 ml  (+ 3 ml NaCl)",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Flumazenil   0,5mg  5ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Furosemid   20 mg  2 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Metamizol   2,5 g  5 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Metoprolol   5 mg  5 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Midazolam   5 mg  5 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Naloxon   0,4 mg   1 ml  (+ 9 ml NaCl)",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Noradrenalin  5 mg  5ml\n(z.B. Sinora 5mg/50ml also 0,1mg/ml)",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Ondansetron  4 mg  2 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Tranexams\u00e4ure  1 g  10 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Uradipil   25 mg  5 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Propofol   1%   20 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Ipratropiumbromid  0,5 mg   2 ml Fertiginhalat",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Salbutamol  1,25 mg  2,5 ml Fertiginhalat",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Midazolam   15 mg   3 ml\nnasalen Applikation (MAD)\nLuer Lock Spritze 3 ml",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Edding",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Combi-Stopper",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Entnahme Mini-Spike  Blau",
+                "location": "Ampullarium > Deckel / Bodenfach mit Ampullenleisten"
+            },
+            {
+                "name": "Lorazepam Tabletten sublingual  2,5 mg",
+                "location": "Ampullarium > Metallbox"
+            },
+            {
+                "name": "Prednisolon  100 mg   Suppositorien",
+                "location": "Ampullarium > Metallbox"
+            },
+            {
+                "name": "Ibuprofen  125 mg   Suppositorien",
+                "location": "Ampullarium > Metallbox"
+            },
+            {
+                "name": "Ibuprofen  60 mg   Suppositorien",
+                "location": "Ampullarium > Metallbox"
+            },
+            {
+                "name": "Rocuronium  50 mg  5 ml",
+                "location": "Ampullarium > Klarsicht-taschen"
+            },
+            {
+                "name": "Heparin   25000 i.E.   5 ml",
+                "location": "Ampullarium > Klarsicht-taschen"
+            },
+            {
+                "name": "Prednisolon   250 mg   (mit 5 ml Aqua aufl\u00f6sen)",
+                "location": "Ampullarium > Klarsicht-taschen"
+            },
+            {
+                "name": "Acetylsalicyls\u00e4ure 500 mg   (mit 5 ml Aqua aufl\u00f6sen)",
+                "location": "Ampullarium > Klarsicht-taschen"
+            },
+            {
+                "name": "Adenosin   6 mg  2 ml",
+                "location": "Ampullarium > Klarsicht-taschen"
+            },
+            {
+                "name": "Aqua   5 ml",
+                "location": "Ampullarium > Klarsicht-taschen"
+            }
+        ]
+    },
+    "Rucksack_Atmung_RTW_NEF": {
+        "meta": {
+            "display_name": "Rucksack Atmung RTW/NEF"
+        },
+        "items": [
+            {
+                "name": "Gecuffte Endotrachealtubus in den Gr\u00f6\u00dfen \n 3,0 / 3,5 / 4,0 /4,5 / 5,0 / 5,5 / 6,0 / 6,5 / 7 / 7,5 / 8.0",
+                "location": "Deckelfach"
+            },
+            {
+                "name": "Laryngoskopgriff",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Spatel \u2013 macintosh \u2013   in den Gr\u00f6\u00dfen 0, 1, 2, 3 und 4",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Spatel \u2013 miller \u2013   in den Gr\u00f6\u00dfen 0 und 1",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Wendeltubus Gr\u00f6\u00dfe 26 und 30",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Guedeltubus   in den Gr\u00f6\u00dfen 1, 2, 3, 4 und 5",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "F\u00fchrungsmandrin/ -stab  in den Gr\u00f6\u00dfen klein, mittel, gro\u00df",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Rolle Leucoplast  2,5 cm",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Fixierb\u00e4nder f\u00fcr Tubus  ca. 1,5 m",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Mullbinde 8 cm",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Peanklemme",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Blockerspritze 10 ml",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Magillzange gro\u00df",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Magillzange klein",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Instillagel Gleitgel 6ml",
+                "location": "Ebene Intubation"
+            },
+            {
+                "name": "Fingertip",
+                "location": "Klarsichtfach"
+            },
+            {
+                "name": "Adapter f\u00fcr Handabsaugpumpe",
+                "location": "Klarsichtfach"
+            },
+            {
+                "name": "Bougie Intubationshilfe",
+                "location": "Ebene Gummib\u00e4nder"
+            },
+            {
+                "name": "Absaugkatheter Ambu Handabsaugpumpe dick und d\u00fcnn",
+                "location": "Ebene Gummib\u00e4nder"
+            },
+            {
+                "name": "O2 Flasche 2 l (mind. 50 bar) mit Druckminderer",
+                "location": "Rucksack Hauptfach"
+            },
+            {
+                "name": "Beatmungsbeutel Erwachsene mit Reservoir und O2-Schlauch",
+                "location": "Rucksack Hauptfach"
+            },
+            {
+                "name": "Beatmungsmaske Ambu-Standard (Gr\u00f6\u00dfe 5)",
+                "location": "Rucksack Hauptfach"
+            },
+            {
+                "name": "Beatmungsmaske S (Gr\u00fcn in Gr\u00f6\u00dfe 3)",
+                "location": "Rucksack Hauptfach"
+            },
+            {
+                "name": "Humid-Vent Filter Erwachsene",
+                "location": "Rucksack Hauptfach"
+            },
+            {
+                "name": "Ambu Handabsaugpumpe mit Absaugbeh\u00e4lter, Adapterdeckel",
+                "location": "Rucksack Hauptfach"
+            },
+            {
+                "name": "Sauerstoffmaske Erwachsene",
+                "location": "Tasche Masken Erwachsene"
+            },
+            {
+                "name": "Verneblermaske Erwachsene",
+                "location": "Tasche Masken Erwachsene"
+            },
+            {
+                "name": "Hyperventilationsmaske Erwachsene",
+                "location": "Tasche Masken Erwachsene"
+            },
+            {
+                "name": "Nasenbrille",
+                "location": "Tasche Masken Erwachsene"
+            },
+            {
+                "name": "Verneblermaske P\u00e4diatrie",
+                "location": "Tasche Masken P\u00e4diatrie"
+            },
+            {
+                "name": "Sauerstoffmaske P\u00e4diatrie",
+                "location": "Tasche Masken P\u00e4diatrie"
+            },
+            {
+                "name": "i-gel\u00ae Larynxmaske in den Gr\u00f6\u00dfen  \n  Gr\u00f6\u00dfe: 5 90+ kg \n  Gr\u00f6\u00dfe: 4 50\u201390 kg\n  Gr\u00f6\u00dfe: 3 30 - 60 kg",
+                "location": "Tasche Larynxmaske"
+            },
+            {
+                "name": "G\u00e4nsegurgel Erwachsene",
+                "location": "Tasche Larynxmaske"
+            },
+            {
+                "name": "Thomasholder f\u00fcr Erwachsene",
+                "location": "Tasche Larynxmaske"
+            },
+            {
+                "name": "Instillagel Gleitgel 6ml",
+                "location": "Tasche Larynxmaske"
+            },
+            {
+                "name": "Magensonde CH 14",
+                "location": "Tasche Larynxmaske"
+            },
+            {
+                "name": "Beutel Magensonde",
+                "location": "Tasche Larynxmaske"
+            },
+            {
+                "name": "Beatmungsbeutel P\u00e4diatrie mit Reservoir und O2-Schlauch",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "Einmal Druckmanometer Beatmungsbeutel P\u00e4diatrie",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "Beatmungsmaske in den Gr\u00f6\u00dfen\nNeonate\nInfant\nToddler",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "G\u00e4nsegurgel P\u00e4diatrie",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "Humid-Vent Filter P\u00e4diatrie",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "Thomasholder P\u00e4diatrie",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "Absaugkatheter in der Gr\u00f6\u00dfe CH6",
+                "location": "Tasche P\u00e4diatrie"
+            },
+            {
+                "name": "Guedeltubus   in den Gr\u00f6\u00dfen 0, 00, 000",
+                "location": "Tasche P\u00e4diatrie"
+            }
+        ]
+    },
+    "Rucksack_Trauma_RTW": {
+        "meta": {
+            "display_name": "Rucksack Trauma RTW"
+        },
+        "items": [
+            {
+                "name": "Beckenschlinge Sam Sling in den Gr\u00f6\u00dfen\nS\nM \nL",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Stifneck-Select f\u00fcr Erwachsene",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Stifneck-Select f\u00fcr Kinder",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Sam Splint",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Elastische Universalbinde 10 cm / 5 m",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Replantatbeutel-Set Bein  \n(ohne Coldpacks, diese sind nur im RTW Schrank 24.1)",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Replantatbeutel-Set Hand  \n(ohne Coldpacks, diese sind nur im RTW Schrank 24.1)",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Aluderm 40 x 60 cm",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Aluderm 60 x 80 cm",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Tourniquet Abbindesystem",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Celox Blutstillende Gauze, Version Z-Faltung, 1,52 m x 7,6 cm, mit Haemostyptikum beschichtet",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Surgicric II \u2013 Cricothyrotomy Kit",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Sterile Handschuhe in den Gr\u00f6\u00dfen\n6,5\n7,5\n8,5",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Entlastungskan\u00fcle Thorax",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Headblock Spineboard",
+                "location": "Hauptfach im Rucksack > Nur im RTW"
+            },
+            {
+                "name": "Spinne f\u00fcr Spineboard",
+                "location": "Hauptfach im Rucksack > Nur im RTW"
+            }
+        ]
+    },
+    "Rucksack_Trauma_NEF": {
+        "meta": {
+            "display_name": "Rucksack Trauma NEF"
+        },
+        "items": [
+            {
+                "name": "Beckenschlinge Sam Sling in den Gr\u00f6\u00dfen\nS\nM \nL",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Stifneck-Select f\u00fcr Erwachsene",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Stifneck-Select f\u00fcr Kinder",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Sam Splint",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Elastische Universalbinde 10 cm / 5 m",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Replantatbeutel-Set Bein  \n(ohne Coldpacks, diese sind nur im RTW Schrank 24.1)",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Replantatbeutel-Set Hand  \n(ohne Coldpacks, diese sind nur im RTW Schrank 24.1)",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Aluderm 40 x 60 cm",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Aluderm 60 x 80 cm",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Tourniquet Abbindesystem",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Celox Blutstillende Gauze, Version Z-Faltung, 1,52 m x 7,6 cm, mit Haemostyptikum beschichtet",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Surgicric II \u2013 Cricothyrotomy Kit",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Sterile Handschuhe in den Gr\u00f6\u00dfen\n6,5\n7,5\n8,5",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Entlastungskan\u00fcle Thorax",
+                "location": "Hauptfach im Rucksack"
+            },
+            {
+                "name": "Thoraxdrainage Set",
+                "location": "Hauptfach im Rucksack > Nur NEF"
+            },
+            {
+                "name": "Katheter-Trocar in den Gr\u00f6\u00dfen \nCh 20 \n\nCh 28",
+                "location": "Hauptfach im Rucksack > Nur NEF"
             }
         ]
     }
